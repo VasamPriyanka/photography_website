@@ -1,0 +1,77 @@
+/* ====== Responsive CSS ========== */
+@media(min-width: 768px){
+	.header .nav{
+		display: block!important;
+	}
+}
+@media(max-width:767px) {
+         .header{
+        padding: 7px 0;
+             }
+        .header .nav-toggle{
+            display: flex;
+            margin-right: 10px;
+        }
+        .header .nav{
+            flex: 0 0 100%;
+            max-width: 100%;
+            background: #ffffff;
+            padding: 0;
+            display: none;
+        }
+        .header .nav ul li{
+            display: block;
+            margin-right: 25px;
+        }
+        .header.fixed .nav{
+            border-top:1px solid #cccccc;
+          }
+          .header.fixed .nav ul li a,
+          .header .nav ul li a{
+              color:#000000;
+              padding: 15px 0;
+          }
+          .home-section .home-content h1{
+              font-size: 40px;
+          }
+          .about-section .about-img{
+            margin-bottom: 30px;
+        }
+        .about-section .about-content,
+        .about-section .about-img {
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+        .work-section .work-item,
+        .service-section .service-item{
+            flex: 0 0 50%;
+        max-width: 50%;
+        }
+}
+
+@media(max-width: 575px){
+    .home-section .home-content h1{
+            font-size: 25px;
+            letter-spacing: 5px;
+        }
+        .about-section .about-content .status .stat-box {
+          flex: 0 0 50%;
+          max-width: 50%;
+       }
+       .contact-section .contact-info .info-item,
+       .contact-section .contact-form .form .input-group.left, 
+       .contact-section .contact-form .form .input-group.right,
+       .work-section .work-item,
+       .service-section .service-item{
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+        .contact-section .contact-form{
+            padding: 0px 35px;
+        }
+        .contact-section .contact-form .form{
+            padding: 55px 5px;
+        }
+    }
+    
+    
